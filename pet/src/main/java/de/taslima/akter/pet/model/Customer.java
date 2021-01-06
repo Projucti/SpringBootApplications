@@ -4,15 +4,15 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-@Entity
+
 public class Customer {
 
-    private @Id @GeneratedValue Integer id;
+    private @Id @GeneratedValue Long id;
     private String name;
     private String address;
     private String dateOfBirth;
 
-    public Customer(Integer id, String name, String address, String dateOfBirth) {
+    public Customer(Long id, String name, String address, String dateOfBirth) {
         this.id = id;
         this.name = name;
         this.address = address;
@@ -23,11 +23,11 @@ public class Customer {
 
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
